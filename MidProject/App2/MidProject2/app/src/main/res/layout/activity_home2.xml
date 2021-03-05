@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Home">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="20sp"
+        android:backgroundTint="@color/Green123"
+        app:layout_constraintStart_toEndOf="@id/tipeinput"
+        app:layout_constraintTop_toBottomOf="@id/Tipetext"/>
+
+    <TextView
+        android:id="@+id/Tipetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipe Kendaraan [Mobil/Motor]: "
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/tipeinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Tipetext"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/brandtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brand [Minimum 5 Character]:"
+        app:layout_constraintTop_toBottomOf="@id/tipeinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/brandinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/brandtext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name [Minimum 5 Character]:"
+        app:layout_constraintTop_toBottomOf="@id/brandinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nametext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/licensetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="License:"
+        app:layout_constraintTop_toBottomOf="@id/nameinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/licenseinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/licensetext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/topspeedtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Speed:"
+        app:layout_constraintTop_toBottomOf="@id/licenseinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="290dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/topspeedinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/topspeedtext"
+        android:layout_marginRight="290dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/gascapacitytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gas Capacity:"
+        app:layout_constraintStart_toEndOf="@id/topspeedtext"
+        app:layout_constraintTop_toBottomOf="@id/licenseinput"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/gascapacityinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/topspeedinput"
+        app:layout_constraintTop_toBottomOf="@id/gascapacitytext"
+        android:layout_marginRight="163dp"
+        android:layout_marginLeft="142dp"/>
+
+    <TextView
+        android:id="@+id/wheeltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wheel:"
+        app:layout_constraintStart_toEndOf="@id/gascapacitytext"
+        app:layout_constraintTop_toBottomOf="@id/licenseinput"
+        android:paddingTop="20dp"
+        android:paddingRight="64dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/wheelinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/gascapacityinput"
+        app:layout_constraintTop_toBottomOf="@id/wheeltext"
+        android:layout_marginRight="37dp"
+        android:layout_marginLeft="268dp"/>
+
+    <TextView
+        android:id="@+id/typetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Type [SUV/Supercar/Minivan]:"
+        app:layout_constraintTop_toBottomOf="@id/topspeedinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/typeinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/typetext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/Entertainmenttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entertainment System Amount:"
+        app:layout_constraintTop_toBottomOf="@id/typeinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/Entertainmentinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/Entertainmenttext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/helmtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helm:"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/typeinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="220dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/helminput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/helmtext"
+        android:layout_marginRight="220dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/typeinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="220dp"/>
+
+    <EditText
+        android:id="@+id/priceinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/pricetext"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="220dp"/>
+
+    <TextView
+        android:id="@+id/bbbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/typeinput"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="220dp"/>
+    <EditText
+        android:id="@+id/aaaaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/bbbbb"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="220dp"/>
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        android:backgroundTint="@color/Green123"
+        app:layout_constraintTop_toBottomOf="@id/aaaaa"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <TextView
+        android:id="@+id/nameoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnsubmit"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btntestdrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Drive"
+        android:textSize="20dp"
+        android:backgroundTint="@color/Green123"
+        app:layout_constraintTop_toBottomOf="@id/nameoutput"
+        android:visibility="invisible"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <TextView
+        android:id="@+id/resultview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btntestdrive"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/resultprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/resultview"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
